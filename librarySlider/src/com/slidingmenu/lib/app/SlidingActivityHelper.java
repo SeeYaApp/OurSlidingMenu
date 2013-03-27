@@ -222,7 +222,7 @@ public class SlidingActivityHelper {
 			ListView usersList=(ListView)((LinearLayout)((RelativeLayout)mViewBehind).getChildAt(1)).getChildAt(0);
 			if(menuLayout.getVisibility()==INVISIBLE)
 			{						
-				mSlidingMenu.setBehindOffsetRes(R.dimen.actionbar_home_width);	
+				//mSlidingMenu.setBehindOffsetRes(R.dimen.actionbar_home_width);	
 				mSlidingMenu.requestLayout();
 				menuLayout.setVisibility(VISIBLE);	
 				//usersList.removeAllViewsInLayout();				
@@ -236,10 +236,9 @@ public class SlidingActivityHelper {
 			else
 			{				
 				showContent();
-			}
-			return true;
+			}			
 		}
-		return false;
+		return true;
 	}
 	public class CustomListAdapter extends BaseAdapter {
 
